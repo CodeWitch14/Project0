@@ -1,2 +1,4 @@
 Flexbox Practice
-![image](https://github.com/user-attachments/assets/eb291afb-251d-42f5-a626-750f5d41b1df)
+
+
+![Screenshot 2024-08-14 214606](https://github.com/user-attachments/assets/03df6711-207a-46f1-9311-63344db68609)
