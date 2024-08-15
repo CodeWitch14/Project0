@@ -1,5 +1,6 @@
 Flexbox Practice
 
 
-![image](https://github.com/user-attachments/assets/c976bfb1-506d-4fc6-b164-9a83546b2427)
+![image](https://github.com/user-attachments/assets/1e049632-d66e-45f4-ba7d-1ae31fea5507)
+
 
