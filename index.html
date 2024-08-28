@@ -1,86 +1,612 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexbox Practice</title>
-    <style>
-        .cards-container {
-            background-color: rgb(185, 120, 120);
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            align-items: center; 
-            align-content: flex-start; 
-            flex-wrap: wrap; 
-            height: 100vh;
-            padding: 10px;
-        }
-        .card {
-            width: 150px;
-            height: 150px;
-            border: 4px double black;
-            border-radius: 10px;
-            margin: 5px;
-            background-color: rgb(197, 197, 197);
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center; 
-        }
-
-        .card-img {
-            width: 100%;
-            height: 100px;
-            border-radius: 7px 7px 0 0;
-        }
-        
-        .card-title {
-            text-align: center;
-            margin: 0;
-            padding: 5px;
-            align-self: center; 
-        }
-    </style>
+    <title>Cards</title>
+    <link href="style.css" rel="Stylesheet">
 </head>
 <body>
-    <h1>Flexbox Practice</h1>
+     <!-- Flex-Direction:Row -->
+    <h2>Flex-direction: Row and Justify-Content: Start</h2>
+    <div class="container">
+        <div class="card">
+            <img src="./images/fantasy3.jpg" alt="pic" class="img_card"/>
+            <p>Fantasy land</p>
+        </div>
 
-    <h2>Fantasy world images</h2>
+        <div class="card">
+            <img src="./images/fantasy2.jpg" alt="pic" class="img_card"/>
+            <p>Boat in clouds</p>
+        </div>
 
-    <div class="cards-container">
         <div class="card">
-            <img src="./images/fantasy3.jpg" class="card-img" alt="Fantasy land"/>
-            <h2 class="card-title">Fantasy land</h2>
+            <img src="https://ih1.redbubble.net/image.4351842816.1914/flat,750x,075,f-pad,750x1000,f8f8f8.jpg" alt="pic" class="img_card"/>
+            <p>Magic Castle</p>
         </div>
+
         <div class="card">
-            <img src="./images/fantasy2.jpg" class="card-img" alt="Boat in clouds"/>
-            <h2 class="card-title">Boat in clouds</h2>
-        </div>
-        <div class="card">
-            <img src="./images/fantasy1.jpg" class="card-img" alt="Unicorn"/>
-            <h2 class="card-title">Unicorn</h2>
-        </div>
-        <div class="card">
-            <img src="https://ih1.redbubble.net/image.4351842816.1914/flat,750x,075,f-pad,750x1000,f8f8f8.jpg" class="card-img" alt="Magic Castle"/>
-            <h2 class="card-title">Magic Castle</h2>
-        </div>
-        <div class="card">
-            <img src="https://i.pinimg.com/236x/a3/47/cc/a347cc952372c9ae27a2b5ca6a25796b.jpg" class="card-img" alt="Dragon"/>
-            <h2 class="card-title">Dragon</h2>
-        </div>
-        <div class="card">
-            <img src="https://images.nightcafe.studio/jobs/COt6fgYjT3s44McxG7Qp/COt6fgYjT3s44McxG7Qp.jpg?tr=w-1600,c-at_max" class="card-img" alt="Landscape"/>
-            <h2 class="card-title">Landscape</h2>
-        </div>
-        <div class="card">
-            <img src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/280409214/original/f7d6441a45bba2d5b4bf762c1d943d8a3c61a171/create-a-fantasy-landscape-background-illustration-d0f1.png" class="card-img" alt="Mountains"/>
-            <h2 class="card-title">Mountains</h2>
-        </div>
-        <div class="card">
-            <img src="https://img.freepik.com/premium-photo/fantasy-illustration-underwater-cave-fantasy-landscape_852955-6631.jpg" class="card-img" alt="Cave"/>
-            <h2 class="card-title">Cave</h2>
+            <img src="./images/fantasy1.jpg" alt="pic" class="img_card"/>
+            <p>Unicorn</p>
         </div>
     </div>
+
+    <h2>Flex-direction: Row and Justify-Content: end</h2>
+    <div class="container2">
+        <div class="card">
+            <img src="./images/fantasy3.jpg" alt="pic" class="img_card"/>
+            <p>Fantasy land</p>
+        </div>
+
+        <div class="card">
+            <img src="./images/fantasy2.jpg" alt="pic" class="img_card"/>
+            <p>Boat in clouds</p>
+        </div>
+
+        <div class="card">
+            <img src="https://ih1.redbubble.net/image.4351842816.1914/flat,750x,075,f-pad,750x1000,f8f8f8.jpg" alt="pic" class="img_card"/>
+            <p>Magic Castle</p>
+        </div>
+
+        <div class="card">
+            <img src="./images/fantasy1.jpg" alt="pic" class="img_card"/>
+            <p>Unicorn</p>
+        </div>
+    </div>
+
+    <h2>Flex-direction: Row and Justify-Content: center</h2>
+    <div class="container3">
+        <div class="card">
+            <img src="./images/fantasy3.jpg" alt="pic" class="img_card"/>
+            <p>Fantasy land</p>
+        </div>
+
+        <div class="card">
+            <img src="./images/fantasy2.jpg" alt="pic" class="img_card"/>
+            <p>Boat in clouds</p>
+        </div>
+
+        <div class="card">
+            <img src="https://ih1.redbubble.net/image.4351842816.1914/flat,750x,075,f-pad,750x1000,f8f8f8.jpg" alt="pic" class="img_card"/>
+            <p>Magic Castle</p>
+        </div>
+
+        <div class="card">
+            <img src="./images/fantasy1.jpg" alt="pic" class="img_card"/>
+            <p>Unicorn</p>
+        </div>
+    </div>
+
+    <h2>Flex-direction: Row and Justify-Content:Space-evenly</h2>
+    <div class="container4">
+        <div class="card">
+            <img src="./images/fantasy3.jpg" alt="pic" class="img_card"/>
+            <p>Fantasy land</p>
+        </div>
+
+        <div class="card">
+            <img src="./images/fantasy2.jpg" alt="pic" class="img_card"/>
+            <p>Boat in clouds</p>
+        </div>
+
+        <div class="card">
+            <img src="https://ih1.redbubble.net/image.4351842816.1914/flat,750x,075,f-pad,750x1000,f8f8f8.jpg" alt="pic" class="img_card"/>
+            <p>Magic Castle</p>
+        </div>
+
+        <div class="card">
+            <img src="./images/fantasy1.jpg" alt="pic" class="img_card"/>
+            <p>Unicorn</p>
+        </div>
+    </div>
+
+    <h2>Flex-direction: Row and Justify-Content:Space-between</h2>
+    <div class="container5">
+       <div class="card">
+            <img src="./images/fantasy3.jpg" alt="pic" class="img_card"/>
+            <p>Fantasy land</p>
+        </div>
+
+        <div class="card">
+            <img src="./images/fantasy2.jpg" alt="pic" class="img_card"/>
+            <p>Boat in clouds</p>
+        </div>
+
+        <div class="card">
+            <img src="https://ih1.redbubble.net/image.4351842816.1914/flat,750x,075,f-pad,750x1000,f8f8f8.jpg" alt="pic" class="img_card"/>
+            <p>Magic Castle</p>
+        </div>
+
+        <div class="card">
+            <img src="./images/fantasy1.jpg" alt="pic" class="img_card"/>
+            <p>Unicorn</p>
+        </div>
+    </div>
+
+    <h2>Flex-direction: Row and Justify-Content:Space-around</h2>
+    <div class="container6">
+        <div class="card">
+            <img src="./images/fantasy3.jpg" alt="pic" class="img_card"/>
+            <p>Fantasy land</p>
+        </div>
+
+        <div class="card">
+            <img src="./images/fantasy2.jpg" alt="pic" class="img_card"/>
+            <p>Boat in clouds</p>
+        </div>
+
+        <div class="card">
+            <img src="https://ih1.redbubble.net/image.4351842816.1914/flat,750x,075,f-pad,750x1000,f8f8f8.jpg" alt="pic" class="img_card"/>
+            <p>Magic Castle</p>
+        </div>
+
+        <div class="card">
+            <img src="./images/fantasy1.jpg" alt="pic" class="img_card"/>
+            <p>Unicorn</p>
+        </div>
+    </div>
+
+    <!-- Flex-Direction:Row-Reverse -->
+    <h2>Flex-direction: Row-Reverse and Justify-Content:Start</h2>
+    <div class="container7">
+       <div class="card">
+            <img src="./images/fantasy3.jpg" alt="pic" class="img_card"/>
+            <p>Fantasy land</p>
+        </div>
+
+        <div class="card">
+            <img src="./images/fantasy2.jpg" alt="pic" class="img_card"/>
+            <p>Boat in clouds</p>
+        </div>
+
+        <div class="card">
+            <img src="https://ih1.redbubble.net/image.4351842816.1914/flat,750x,075,f-pad,750x1000,f8f8f8.jpg" alt="pic" class="img_card"/>
+            <p>Magic Castle</p>
+        </div>
+
+        <div class="card">
+            <img src="./images/fantasy1.jpg" alt="pic" class="img_card"/>
+            <p>Unicorn</p>
+        </div>
+    </div>
+
+    <h2>Flex-direction: Row-Reverse and Justify-Content:end</h2>
+    <div class="container8">
+        <div class="card">
+            <img src="./images/fantasy3.jpg" alt="pic" class="img_card"/>
+            <p>Fantasy land</p>
+        </div>
+
+        <div class="card">
+            <img src="./images/fantasy2.jpg" alt="pic" class="img_card"/>
+            <p>Boat in clouds</p>
+        </div>
+
+        <div class="card">
+            <img src="https://ih1.redbubble.net/image.4351842816.1914/flat,750x,075,f-pad,750x1000,f8f8f8.jpg" alt="pic" class="img_card"/>
+            <p>Magic Castle</p>
+        </div>
+
+        <div class="card">
+            <img src="./images/fantasy1.jpg" alt="pic" class="img_card"/>
+            <p>Unicorn</p>
+        </div>
+    </div>
+
+    <h2>Flex-direction: Row-Reverse and Justify-Content: center</h2>
+    <div class="container9">
+        <div class="card">
+            <img src="./images/fantasy3.jpg" alt="pic" class="img_card"/>
+            <p>Fantasy land</p>
+        </div>
+
+        <div class="card">
+            <img src="./images/fantasy2.jpg" alt="pic" class="img_card"/>
+            <p>Boat in clouds</p>
+        </div>
+
+        <div class="card">
+            <img src="https://ih1.redbubble.net/image.4351842816.1914/flat,750x,075,f-pad,750x1000,f8f8f8.jpg" alt="pic" class="img_card"/>
+            <p>Magic Castle</p>
+        </div>
+
+        <div class="card">
+            <img src="./images/fantasy1.jpg" alt="pic" class="img_card"/>
+            <p>Unicorn</p>
+        </div>
+    </div>
+
+    <h2>Flex-direction: Row-Reverse and Justify-Content: Space-evenly</h2>
+    <div class="container10">
+        <div class="card">
+            <img src="./images/fantasy3.jpg" alt="pic" class="img_card"/>
+            <p>Fantasy land</p>
+        </div>
+
+        <div class="card">
+            <img src="./images/fantasy2.jpg" alt="pic" class="img_card"/>
+            <p>Boat in clouds</p>
+        </div>
+
+        <div class="card">
+            <img src="https://ih1.redbubble.net/image.4351842816.1914/flat,750x,075,f-pad,750x1000,f8f8f8.jpg" alt="pic" class="img_card"/>
+            <p>Magic Castle</p>
+        </div>
+
+        <div class="card">
+            <img src="./images/fantasy1.jpg" alt="pic" class="img_card"/>
+            <p>Unicorn</p>
+        </div>
+    </div>
+
+    <h2>Flex-direction: Row-Reverse and Justify-Content: Space-between</h2>
+    <div class="container11">
+        <div class="card">
+            <img src="./images/fantasy3.jpg" alt="pic" class="img_card"/>
+            <p>Fantasy land</p>
+        </div>
+
+        <div class="card">
+            <img src="./images/fantasy2.jpg" alt="pic" class="img_card"/>
+            <p>Boat in clouds</p>
+        </div>
+
+        <div class="card">
+            <img src="https://ih1.redbubble.net/image.4351842816.1914/flat,750x,075,f-pad,750x1000,f8f8f8.jpg" alt="pic" class="img_card"/>
+            <p>Magic Castle</p>
+        </div>
+
+        <div class="card">
+            <img src="./images/fantasy1.jpg" alt="pic" class="img_card"/>
+            <p>Unicorn</p>
+        </div>
+    </div>
+
+    <h2>Flex-direction: Row-Reverse and Justify-Content: Space-around</h2>
+    <div class="container12">
+         <div class="card">
+            <img src="./images/fantasy3.jpg" alt="pic" class="img_card"/>
+            <p>Fantasy land</p>
+        </div>
+
+        <div class="card">
+            <img src="./images/fantasy2.jpg" alt="pic" class="img_card"/>
+            <p>Boat in clouds</p>
+        </div>
+
+        <div class="card">
+            <img src="https://ih1.redbubble.net/image.4351842816.1914/flat,750x,075,f-pad,750x1000,f8f8f8.jpg" alt="pic" class="img_card"/>
+            <p>Magic Castle</p>
+        </div>
+
+        <div class="card">
+            <img src="./images/fantasy1.jpg" alt="pic" class="img_card"/>
+            <p>Unicorn</p>
+        </div>
+    </div>
+
+    <!-- Flex-Direction:Column -->
+    <h2>Flex-direction: Column and Justify-Content: Strat</h2>
+    <div class="container13">
+         <div class="card">
+            <img src="./images/fantasy3.jpg" alt="pic" class="img_card"/>
+            <p>Fantasy land</p>
+        </div>
+
+        <div class="card">
+            <img src="./images/fantasy2.jpg" alt="pic" class="img_card"/>
+            <p>Boat in clouds</p>
+        </div>
+
+        <div class="card">
+            <img src="https://ih1.redbubble.net/image.4351842816.1914/flat,750x,075,f-pad,750x1000,f8f8f8.jpg" alt="pic" class="img_card"/>
+            <p>Magic Castle</p>
+        </div>
+
+        <div class="card">
+            <img src="./images/fantasy1.jpg" alt="pic" class="img_card"/>
+            <p>Unicorn</p>
+        </div>
+    </div>
+
+    <h2>Flex-direction: Column and Justify-Content: end</h2>
+    <div class="container14">
+        <div class="card">
+            <img src="./images/fantasy3.jpg" alt="pic" class="img_card"/>
+            <p>Fantasy land</p>
+        </div>
+
+        <div class="card">
+            <img src="./images/fantasy2.jpg" alt="pic" class="img_card"/>
+            <p>Boat in clouds</p>
+        </div>
+
+        <div class="card">
+            <img src="https://ih1.redbubble.net/image.4351842816.1914/flat,750x,075,f-pad,750x1000,f8f8f8.jpg" alt="pic" class="img_card"/>
+            <p>Magic Castle</p>
+        </div>
+
+        <div class="card">
+            <img src="./images/fantasy1.jpg" alt="pic" class="img_card"/>
+            <p>Unicorn</p>
+        </div>
+    </div>
+
+    <h2>Flex-direction: Column and Justify-Content: center</h2>
+    <div class="container15">
+        <div class="card">
+            <img src="./images/fantasy3.jpg" alt="pic" class="img_card"/>
+            <p>Fantasy land</p>
+        </div>
+
+        <div class="card">
+            <img src="./images/fantasy2.jpg" alt="pic" class="img_card"/>
+            <p>Boat in clouds</p>
+        </div>
+
+        <div class="card">
+            <img src="https://ih1.redbubble.net/image.4351842816.1914/flat,750x,075,f-pad,750x1000,f8f8f8.jpg" alt="pic" class="img_card"/>
+            <p>Magic Castle</p>
+        </div>
+
+        <div class="card">
+            <img src="./images/fantasy1.jpg" alt="pic" class="img_card"/>
+            <p>Unicorn</p>
+        </div>
+    </div>
+
+    <h2>Flex-direction: Column and Justify-Content: space-evenly</h2>
+    <div class="container16">
+        <div class="card">
+            <img src="./images/fantasy3.jpg" alt="pic" class="img_card"/>
+            <p>Fantasy land</p>
+        </div>
+
+        <div class="card">
+            <img src="./images/fantasy2.jpg" alt="pic" class="img_card"/>
+            <p>Boat in clouds</p>
+        </div>
+
+        <div class="card">
+            <img src="https://ih1.redbubble.net/image.4351842816.1914/flat,750x,075,f-pad,750x1000,f8f8f8.jpg" alt="pic" class="img_card"/>
+            <p>Magic Castle</p>
+        </div>
+
+        <div class="card">
+            <img src="./images/fantasy1.jpg" alt="pic" class="img_card"/>
+            <p>Unicorn</p>
+        </div>
+    </div>
+
+    <h2>Flex-direction: Column and Justify-Content: space-between</h2>
+    <div class="container17">
+       <div class="card">
+            <img src="./images/fantasy3.jpg" alt="pic" class="img_card"/>
+            <p>Fantasy land</p>
+        </div>
+
+        <div class="card">
+            <img src="./images/fantasy2.jpg" alt="pic" class="img_card"/>
+            <p>Boat in clouds</p>
+        </div>
+
+        <div class="card">
+            <img src="https://ih1.redbubble.net/image.4351842816.1914/flat,750x,075,f-pad,750x1000,f8f8f8.jpg" alt="pic" class="img_card"/>
+            <p>Magic Castle</p>
+        </div>
+
+        <div class="card">
+            <img src="./images/fantasy1.jpg" alt="pic" class="img_card"/>
+            <p>Unicorn</p>
+        </div>
+    </div>
+
+    <h2>Flex-direction: Column and Justify-Content: space-around</h2>
+    <div class="container18">
+        <div class="card">
+            <img src="./images/fantasy3.jpg" alt="pic" class="img_card"/>
+            <p>Fantasy land</p>
+        </div>
+
+        <div class="card">
+            <img src="./images/fantasy2.jpg" alt="pic" class="img_card"/>
+            <p>Boat in clouds</p>
+        </div>
+
+        <div class="card">
+            <img src="https://ih1.redbubble.net/image.4351842816.1914/flat,750x,075,f-pad,750x1000,f8f8f8.jpg" alt="pic" class="img_card"/>
+            <p>Magic Castle</p>
+        </div>
+
+        <div class="card">
+            <img src="./images/fantasy1.jpg" alt="pic" class="img_card"/>
+            <p>Unicorn</p>
+        </div>
+    </div>
+    
+    <!-- Flex-Direction:Column-Reverse -->
+    <h2>Flex-direction: Column-Reverse and Justify-Content: Start</h2>
+    <div class="container19">
+        <div class="card">
+            <img src="./images/fantasy3.jpg" alt="pic" class="img_card"/>
+            <p>Fantasy land</p>
+        </div>
+
+        <div class="card">
+            <img src="./images/fantasy2.jpg" alt="pic" class="img_card"/>
+            <p>Boat in clouds</p>
+        </div>
+
+        <div class="card">
+            <img src="https://ih1.redbubble.net/image.4351842816.1914/flat,750x,075,f-pad,750x1000,f8f8f8.jpg" alt="pic" class="img_card"/>
+            <p>Magic Castle</p>
+        </div>
+
+        <div class="card">
+            <img src="./images/fantasy1.jpg" alt="pic" class="img_card"/>
+            <p>Unicorn</p>
+        </div>
+    </div>
+
+    <h2>Flex-direction: Column-Reverse and Justify-Content: end</h2>
+    <div class="container20">
+        <div class="card">
+            <img src="./images/fantasy3.jpg" alt="pic" class="img_card"/>
+            <p>Fantasy land</p>
+        </div>
+
+        <div class="card">
+            <img src="./images/fantasy2.jpg" alt="pic" class="img_card"/>
+            <p>Boat in clouds</p>
+        </div>
+
+        <div class="card">
+            <img src="https://ih1.redbubble.net/image.4351842816.1914/flat,750x,075,f-pad,750x1000,f8f8f8.jpg" alt="pic" class="img_card"/>
+            <p>Magic Castle</p>
+        </div>
+
+        <div class="card">
+            <img src="./images/fantasy1.jpg" alt="pic" class="img_card"/>
+            <p>Unicorn</p>
+        </div>
+    </div>
+
+    <h2>Flex-direction: Column-Reverse and Justify-Content: center</h2>
+    <div class="container21">
+        <div class="card">
+            <img src="./images/fantasy3.jpg" alt="pic" class="img_card"/>
+            <p>Fantasy land</p>
+        </div>
+
+        <div class="card">
+            <img src="./images/fantasy2.jpg" alt="pic" class="img_card"/>
+            <p>Boat in clouds</p>
+        </div>
+
+        <div class="card">
+            <img src="https://ih1.redbubble.net/image.4351842816.1914/flat,750x,075,f-pad,750x1000,f8f8f8.jpg" alt="pic" class="img_card"/>
+            <p>Magic Castle</p>
+        </div>
+
+        <div class="card">
+            <img src="./images/fantasy1.jpg" alt="pic" class="img_card"/>
+            <p>Unicorn</p>
+        </div>
+    </div>
+
+    <h2>Flex-direction: Column-Reverse and Justify-Content: Space-evenly</h2>
+    <div class="container22">
+        <div class="card">
+            <img src="./images/fantasy3.jpg" alt="pic" class="img_card"/>
+            <p>Fantasy land</p>
+        </div>
+
+        <div class="card">
+            <img src="./images/fantasy2.jpg" alt="pic" class="img_card"/>
+            <p>Boat in clouds</p>
+        </div>
+
+        <div class="card">
+            <img src="https://ih1.redbubble.net/image.4351842816.1914/flat,750x,075,f-pad,750x1000,f8f8f8.jpg" alt="pic" class="img_card"/>
+            <p>Magic Castle</p>
+        </div>
+
+        <div class="card">
+            <img src="./images/fantasy1.jpg" alt="pic" class="img_card"/>
+            <p>Unicorn</p>
+        </div>
+    </div>
+
+    <h2>Flex-direction: Column-Reverse and Justify-Content: Space-between</h2>
+    <div class="container23">
+        <div class="card">
+            <img src="./images/fantasy3.jpg" alt="pic" class="img_card"/>
+            <p>Fantasy land</p>
+        </div>
+
+        <div class="card">
+            <img src="./images/fantasy2.jpg" alt="pic" class="img_card"/>
+            <p>Boat in clouds</p>
+        </div>
+
+        <div class="card">
+            <img src="https://ih1.redbubble.net/image.4351842816.1914/flat,750x,075,f-pad,750x1000,f8f8f8.jpg" alt="pic" class="img_card"/>
+            <p>Magic Castle</p>
+        </div>
+
+        <div class="card">
+            <img src="./images/fantasy1.jpg" alt="pic" class="img_card"/>
+            <p>Unicorn</p>
+        </div>
+    </div>
+
+    <h2>Flex-direction: Column-Reverse and Justify-Content: Space-around</h2>
+    <div class="container24">
+        <div class="card">
+            <img src="./images/fantasy3.jpg" alt="pic" class="img_card"/>
+            <p>Fantasy land</p>
+        </div>
+
+        <div class="card">
+            <img src="./images/fantasy2.jpg" alt="pic" class="img_card"/>
+            <p>Boat in clouds</p>
+        </div>
+
+        <div class="card">
+            <img src="https://ih1.redbubble.net/image.4351842816.1914/flat,750x,075,f-pad,750x1000,f8f8f8.jpg" alt="pic" class="img_card"/>
+            <p>Magic Castle</p>
+        </div>
+
+        <div class="card">
+            <img src="./images/fantasy1.jpg" alt="pic" class="img_card"/>
+            <p>Unicorn</p>
+        </div>
+    </div>
+
+    <h2>Flex-wrap:no-wrap</h2>
+    <div class="box1">
+       <div class="card">
+            <img src="./images/fantasy3.jpg" alt="pic" class="img_card"/>
+            <p>Fantasy land</p>
+        </div>
+
+        <div class="card">
+            <img src="./images/fantasy2.jpg" alt="pic" class="img_card"/>
+            <p>Boat in clouds</p>
+        </div>
+
+        <div class="card">
+            <img src="https://ih1.redbubble.net/image.4351842816.1914/flat,750x,075,f-pad,750x1000,f8f8f8.jpg" alt="pic" class="img_card"/>
+            <p>Magic Castle</p>
+        </div>
+
+        <div class="card">
+            <img src="./images/fantasy1.jpg" alt="pic" class="img_card"/>
+            <p>Unicorn</p>
+        </div>
+    </div>
+
+    <h2>Flex-wrap:wrap</h2>
+    <div class="box2">
+        <div class="card">
+            <img src="./images/fantasy3.jpg" alt="pic" class="img_card"/>
+            <p>Fantasy land</p>
+        </div>
+
+        <div class="card">
+            <img src="./images/fantasy2.jpg" alt="pic" class="img_card"/>
+            <p>Boat in clouds</p>
+        </div>
+
+        <div class="card">
+            <img src="https://ih1.redbubble.net/image.4351842816.1914/flat,750x,075,f-pad,750x1000,f8f8f8.jpg" alt="pic" class="img_card"/>
+            <p>Magic Castle</p>
+        </div>
+
+        <div class="card">
+            <img src="./images/fantasy1.jpg" alt="pic" class="img_card"/>
+            <p>Unicorn</p>
+        </div>
+    </div>
+
+    
 </body>
 </html>
